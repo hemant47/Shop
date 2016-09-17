@@ -1,0 +1,12 @@
+Requirements:
+--> Storing all items with following information
+  barcode
+  name
+  MRP
+  discount
+  sale price
+  
+--> addItem
+--> getItemDetails
+--> writing database on file and retrieving it
+--> 
