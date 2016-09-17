@@ -1,0 +1,27 @@
+
+class Item {
+	long int _barcode;
+	string _name;
+	int _MRP;
+	int _discount;
+	int _sale_price;
+	public:
+	Item(long int &barcode, string &name, int &MRP, int &discount)
+	:_barcode(barcode)
+	:_name(name)
+	:_MRP(MRP)
+	:_discount(discount)
+	:_sale_price(getSP(MRP,discount))
+	{}
+	
+	Item(long int &barcode, string &name, int &MRP)
+	:_barcode(barcode)
+	:_name(name)
+	:_MRP(MRP)
+	:_discount(0)
+	:_sale_price(MRP)
+	{}
+	
+	int getSalePrice();
+	void addDiscount();
+};
