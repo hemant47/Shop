@@ -1,2 +1,2 @@
 # Shop
-A software to help shopkeepar
+A software to help shopkeeper
